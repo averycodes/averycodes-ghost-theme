@@ -1,0 +1,46 @@
+{{!< default}}
+<!--HEADER-->
+<div class="header-wrapper">
+  <div class="header-image"></div>
+  <div class="navigation">
+    <a href="/blog"><span class="nav-icon icon-pen"></span></a>
+    <a href="/projects"><span class="nav-icon icon-ruler"></span></a>
+    <a href="/"><img class="avatar" src="/assets/images/avatar.jpg"></a>
+    <a href="/skills"><span class="nav-icon icon-uniE60E"></span></a>
+    <a href="/resume"><span class="nav-icon icon-mouse"></span></a>
+  </div>
+</div>
+<!--END HEADER-->
+
+
+
+
+<main class="main-content" role="main">
+
+  {{#foreach posts}}
+    <!--POST-->
+    <article class="averycodes-post">
+      <header class="post-header">
+        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+        <h1 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+      </header>
+      <div class="post-content">
+        {{content}}
+      </div>
+      {{#if tags}}
+        <div class="post-tags">
+        Tags: {{tags separator=" | "}}
+        </div>
+      {{/if}}
+    </article>
+    <!--END POST-->
+  {{/foreach}}
+
+  <!--PAGINATION-->
+  {{#if pagination}}
+  <div class="pagination_uber">
+  {{{pagination}}}
+  </div>
+  {{/if}}
+  <!--END PAGINATION-->
+</main>
