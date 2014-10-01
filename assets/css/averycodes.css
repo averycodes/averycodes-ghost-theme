@@ -212,6 +212,34 @@ h1.page-title {
   margin: 20px 0;
 }
 
+@media only screen and (max-device-width: 480px) {
+  .main-content {
+    margin: 20px;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .navigation {
+    height: 50px;
+  }
+  .navigation .avatar {
+    border-radius: 0;
+    width: 50px;
+    border: none;
+    display: inline-block;
+  }
+
+  .nav-icon {
+    font-size: 30px;
+    color: rgba(255, 255, 255, .6);
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px
+  }
+}
+
 
 
 
