@@ -24,26 +24,32 @@ h1 {
 
 h2 {
   font-family: "pragmatica-web";
+  font-size: 22px;
 
 }
 
 h3 {
   font-family: "pragmatica-web";
+  font-size: 18px;
 
 }
 
 h4 {
   font-family: "pragmatica-web";
+  font-size: 15px;
 
 }
 
 h5 {
-  font-family: "pragmatica-web";
-
+  font-family: "jaf-bernino-sans-condensed";
+  font-size: 15px;
+  font-weight: bolder;
 }
 
 h6 {
-  font-family: "pragmatica-web";
+  font-family: "jaf-bernino-sans-condensed";
+  font-size: 13px;
+  font-weight: bolder;
 
 }
 
@@ -183,8 +189,8 @@ h1.page-title {
   margin: 90px 200px 10px;
 }
 
-.averycodes-post {
-
+.averycodes-wrapper {
+  margin-bottom: 75px;
 }
 
 .post-header {
@@ -199,6 +205,13 @@ h1.page-title {
 }
 
 .post-date {
+  color: #aaa;
+  font-style: italic;
+}
+
+.post-date-post-page {
+  display: block;
+  text-align: center;
   color: #aaa;
   font-style: italic;
 }
