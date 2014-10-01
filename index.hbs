@@ -12,17 +12,14 @@
 </div>
 <!--END HEADER-->
 
-
-
-
 <main class="main-content" role="main">
-
+  <h1 class="page-title">I Write Things</h1>
   {{#foreach posts}}
     <!--POST-->
     <article class="averycodes-post">
       <header class="post-header">
-        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
         <h1 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+        <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='MMMM DD, YYYY'}}</time>
       </header>
       <div class="post-content">
         {{content}}
@@ -33,12 +30,13 @@
         </div>
       {{/if}}
     </article>
+    <hr >
     <!--END POST-->
   {{/foreach}}
 
   <!--PAGINATION-->
   {{#if pagination}}
-  <div class="pagination_uber">
+  <div class="pagination">
   {{{pagination}}}
   </div>
   {{/if}}

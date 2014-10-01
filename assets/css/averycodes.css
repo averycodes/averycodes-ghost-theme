@@ -4,11 +4,11 @@ body {
 
 /*
 serif
-font-family: "adobe-garamond-pro";
 font-family: "source-serif-pro";
 
 sans
 font-family: "pragmatica-web";
+font-family: "jaf-bernino-sans-condensed";
 
 mono
 font-family: "courier-std";
@@ -17,78 +17,110 @@ font-family: "p22-franklin-caslon";
 */
 
 h1 {
-font-family: "pragmatica-web";
-
-
+  font-family: "jaf-bernino-sans-condensed";
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h2 {
-font-family: "pragmatica-web";
+  font-family: "pragmatica-web";
 
 }
 
 h3 {
-font-family: "pragmatica-web";
+  font-family: "pragmatica-web";
 
 }
 
 h4 {
-font-family: "pragmatica-web";
+  font-family: "pragmatica-web";
 
 }
 
 h5 {
-font-family: "pragmatica-web";
+  font-family: "pragmatica-web";
 
 }
 
 h6 {
-font-family: "pragmatica-web";
+  font-family: "pragmatica-web";
 
 }
 
 p {
-font-family: "source-serif-pro";
+  font-family: "source-serif-pro";
 }
 
 ul {
-font-family: "source-serif-pro";
+  font-family: "source-serif-pro";
 }
 
 ol {
-font-family: "source-serif-pro";
+  font-family: "source-serif-pro";
 }
 
 li {
-font-family: "source-serif-pro";
+  font-family: "source-serif-pro";
 }
 
 blockquote {
+  font-family: "source-serif-pro";
 
 }
 
-code {
+pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+pre code {
   font-family: "courier-std";
+  display: inline;
+  padding: 0;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+p code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 95%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
 }
 
 hr {
 
 }
 
-a {
+img {
+  margin: 0 auto;
+}
 
+a {
+  color: #e63f1b;
+  text-decoration: none;
 }
 
 a:visited {
-
+  color: #e63f1b;
 }
 
 a:hover {
-
+  color: #e63f1b;
+  text-decoration: underline;
 }
 
 a:link {
-
+  color: #e63f1b;
 }
 
 
@@ -97,8 +129,8 @@ a:link {
   min-height: 350px;
 }
 
-h1.blog-title {
-  font-family: "p22-franklin-caslon";
+h1.page-title {
+  text-align: center;
 }
 
 .header-image {
@@ -159,8 +191,16 @@ h1.blog-title {
 
 }
 
-.post-date {
+.post-title {
+  text-transform: none;
+  color: #e63f1b !important;
+  font-size: 30px;
+  margin: 20px 0 0 0;
+}
 
+.post-date {
+  color: #aaa;
+  font-style: italic;
 }
 
 .post-tags {
@@ -171,6 +211,10 @@ h1.blog-title {
 
 }
 
+
+.pagination {
+  margin: 20px 0;
+}
 
 
 
