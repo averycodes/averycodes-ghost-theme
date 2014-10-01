@@ -103,10 +103,6 @@ p code {
   border-radius: 3px;
 }
 
-hr {
-
-}
-
 img {
   margin: 0 auto;
 }
@@ -193,10 +189,6 @@ h1.page-title {
   margin-bottom: 75px;
 }
 
-.post-header {
-
-}
-
 .post-title {
   text-transform: none;
   color: #e63f1b !important;
@@ -215,15 +207,6 @@ h1.page-title {
   color: #aaa;
   font-style: italic;
 }
-
-.post-tags {
-
-}
-
-.post-content {
-
-}
-
 
 .pagination {
   margin: 20px 0;
