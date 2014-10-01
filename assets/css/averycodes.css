@@ -229,6 +229,7 @@ h1.page-title {
     height: 0;
     border: none;
     width: 100%;
+    display: none;
   }
 
   .navigation {
@@ -238,6 +239,7 @@ h1.page-title {
     left: 0;
     width: 300px;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
   .navigation .avatar {
     border-radius: 0;
