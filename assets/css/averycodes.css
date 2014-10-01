@@ -258,6 +258,10 @@ h1.page-title {
     vertical-align: top;
     padding: 10px
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 
